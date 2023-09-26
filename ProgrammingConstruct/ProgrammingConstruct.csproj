@@ -49,6 +49,7 @@
     <Compile Include="FactorialCalculator.cs" />
     <Compile Include="IntegerCompare.cs" />
     <Compile Include="LargestOf3Number.cs" />
+    <Compile Include="NaturalNumberCalculator.cs" />
     <Compile Include="NumberChecker.cs" />
     <Compile Include="PowerOfTwoTable.cs" />
     <Compile Include="Program.cs" />

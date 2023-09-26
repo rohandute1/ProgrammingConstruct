@@ -20,7 +20,8 @@ namespace ProgrammingConstruct
                     "3.Voter Eligibility Checker\n4.Find Largest number\n5.Check student eligible for admission or not." +
                     "\n6.Weekday name checker\n7.Arithmetic operator\n8.Print table" +
                     "\n9.Prints the sum of squares of N numbers\n10.Calculate Factorial\n" +
-                    "11.Flip Coin problem\n12.Word Reverse problem\n13.Natural Number sum calculator");
+                    "11.Flip Coin problem\n12.Word Reverse problem\n13.Natural Number sum calculator" +
+                    "\n14.Inheritance types");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -148,6 +149,28 @@ namespace ProgrammingConstruct
                         NaturalNumberCalculator naturalNumber = new NaturalNumberCalculator(); 
                         int result = naturalNumber.CalculateSumOfFirstFiveNaturalNumbers();
                         Console.WriteLine("The sum of the first 5 natural numbers is: " + result);
+                        break;
+
+                    case 14:
+                        Dog dog = new Dog("Oscar");
+                        dog.Eat();
+                        dog.Sleep();
+                        dog.Bark();
+
+                        Console.WriteLine();
+
+                        Puppy puppy = new Puppy("Sophie");
+                        puppy.Eat();
+                        puppy.Sleep();
+                        puppy.Bark();
+                        puppy.Play();
+
+                        Console.WriteLine();
+
+                        Cat cat = new Cat("Tom");
+                        cat.Eat();
+                        cat.Sleep();
+                        cat.Meow();
                         break;
 
                     default:

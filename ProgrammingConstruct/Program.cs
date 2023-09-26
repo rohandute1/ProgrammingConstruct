@@ -19,7 +19,8 @@ namespace ProgrammingConstruct
                 Console.WriteLine("1.Check Two int are equal or not\n2.Check given number is even or odd.\n" +
                     "3.Voter Eligibility Checker\n4.Find Largest number\n5.Check student eligible for admission or not." +
                     "\n6.Weekday name checker\n7.Arithmetic operator\n8.Print table" +
-                    "\n9.Prints the sum of squares of N numbers\n10.Calculate Factorial");
+                    "\n9.Prints the sum of squares of N numbers\n10.Calculate Factorial\n" +
+                    "11.Flip Coin problem");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -126,6 +127,12 @@ namespace ProgrammingConstruct
                             Console.WriteLine($"{inputNum}! = {factorial}");
                         }
                         break;
+
+                    case 11:
+                        CoinFlipper game = new CoinFlipper();
+                        game.Play();
+                        break;
+
                     default:
                         Console.WriteLine("Invalid option, Please select a valid program.");
                         break;

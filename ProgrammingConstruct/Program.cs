@@ -18,7 +18,7 @@ namespace ProgrammingConstruct
                 Console.WriteLine("Please choose any one of the following program:");
                 Console.WriteLine("1.Check Two int are equal or not\n2.Check given number is even or odd.\n" +
                     "3.Voter Eligibility Checker\n4.Find Largest number\n5.Check student eligible for admission or not." +
-                    "\n6.Weekday name checker\n7.Arithmetic operator");
+                    "\n6.Weekday name checker\n7.Arithmetic operator\n8.Print table");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -92,6 +92,14 @@ namespace ProgrammingConstruct
                         ArithmaticOperations operations = new ArithmaticOperations();
                         operations.ArithmeticOperator(p, q);
  
+                        break;
+                    case 8:
+                        PowerOfTwoTable tablePrinter = new PowerOfTwoTable();
+
+                        Console.WriteLine("Enter a value for n: ");
+                        int n = Convert.ToInt32(Console.ReadLine());
+
+                        tablePrinter.PrintTable(n);
                         break;
                     default:
                         Console.WriteLine("Invalid option, Please select a valid program.");

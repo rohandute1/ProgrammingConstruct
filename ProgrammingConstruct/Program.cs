@@ -16,7 +16,8 @@ namespace ProgrammingConstruct
             while (continueExecution)
             {
                 Console.WriteLine("Please choose any one of the following program:");
-                Console.WriteLine("1.Check Two int are equal or not\n2.Check given number is even or odd.");
+                Console.WriteLine("1.Check Two int are equal or not\n2.Check given number is even or odd.\n" +
+                    "3.Voter Eligibility Checker");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -32,6 +33,15 @@ namespace ProgrammingConstruct
                         int inputNumber = Convert.ToInt32(Console.ReadLine());
 
                         checker.CheckEvenOrOdd(inputNumber);
+                        break;
+
+                    case 3:
+                        VoterEligibilityChecker check = new VoterEligibilityChecker();
+
+                        Console.WriteLine("Enter your age: ");
+                        int candidateAge = Convert.ToInt32(Console.ReadLine());
+
+                        check.CheckEligibility(candidateAge);
                         break;
 
                     default:

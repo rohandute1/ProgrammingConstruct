@@ -17,7 +17,8 @@ namespace ProgrammingConstruct
             {
                 Console.WriteLine("Please choose any one of the following program:");
                 Console.WriteLine("1.Check Two int are equal or not\n2.Check given number is even or odd.\n" +
-                    "3.Voter Eligibility Checker\n4.Find Largest number\n5.Check student eligible for admission or not.");
+                    "3.Voter Eligibility Checker\n4.Find Largest number\n5.Check student eligible for admission or not." +
+                    "\n6.Weekday name checker");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -70,6 +71,17 @@ namespace ProgrammingConstruct
                         int mathMarks = Convert.ToInt32(Console.ReadLine());
 
                         eligibilityCheck.CheckEligibility(physicsMarks, chemistryMarks, mathMarks);
+                        break;
+
+                    case 6:
+                        WeekdayCalculator calculator = new WeekdayCalculator();
+
+                        Console.WriteLine("Enter a weekday number (1-7): ");
+                        int weekdayNumber = Convert.ToInt32(Console.ReadLine());
+
+                        string weekdayName = calculator.CalculateWeekdayName(weekdayNumber);
+
+                        Console.WriteLine($"The weekday for number {weekdayNumber} is: {weekdayName}");
                         break;
                     default:
                         Console.WriteLine("Invalid option, Please select a valid program.");

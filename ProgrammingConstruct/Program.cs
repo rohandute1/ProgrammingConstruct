@@ -19,7 +19,7 @@ namespace ProgrammingConstruct
                 Console.WriteLine("1.Check Two int are equal or not\n2.Check given number is even or odd.\n" +
                     "3.Voter Eligibility Checker\n4.Find Largest number\n5.Check student eligible for admission or not." +
                     "\n6.Weekday name checker\n7.Arithmetic operator\n8.Print table" +
-                    "\n9.Prints the sum of squares of N numbers");
+                    "\n9.Prints the sum of squares of N numbers\n10.Calculate Factorial");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -111,6 +111,20 @@ namespace ProgrammingConstruct
                         int sumOfSquares = square.CalculateSumOfSquares(numb);
 
                         Console.WriteLine($"The sum of squares of the first {numb} numbers is: {sumOfSquares}");
+                        break;
+
+                    case 10:
+                        FactorialCalculator fact = new FactorialCalculator();
+
+                        Console.WriteLine("Enter a number to calculate its factorial: ");
+                        int inputNum = Convert.ToInt32(Console.ReadLine());
+
+                        long factorial = fact.CalculateFactorial(inputNum);
+
+                        if (factorial != -1)
+                        {
+                            Console.WriteLine($"{inputNum}! = {factorial}");
+                        }
                         break;
                     default:
                         Console.WriteLine("Invalid option, Please select a valid program.");

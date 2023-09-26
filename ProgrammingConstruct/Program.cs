@@ -17,7 +17,7 @@ namespace ProgrammingConstruct
             {
                 Console.WriteLine("Please choose any one of the following program:");
                 Console.WriteLine("1.Check Two int are equal or not\n2.Check given number is even or odd.\n" +
-                    "3.Voter Eligibility Checker\n4.Find Largest number");
+                    "3.Voter Eligibility Checker\n4.Find Largest number\n5.Check student eligible for admission or not.");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -57,6 +57,20 @@ namespace ProgrammingConstruct
                         Console.WriteLine($"The largest number among {numA}, {numB}, and {numC} is: {largestNum}");
                         break;
 
+                    case 5:
+                        EligibilityCriteriaChecker eligibilityCheck = new EligibilityCriteriaChecker();
+
+                        Console.WriteLine("Input the marks obtained in Physics: ");
+                        int physicsMarks = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Input the marks obtained in Chemistry: ");
+                        int chemistryMarks = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Input the marks obtained in Mathematics: ");
+                        int mathMarks = Convert.ToInt32(Console.ReadLine());
+
+                        eligibilityCheck.CheckEligibility(physicsMarks, chemistryMarks, mathMarks);
+                        break;
                     default:
                         Console.WriteLine("Invalid option, Please select a valid program.");
                         break;

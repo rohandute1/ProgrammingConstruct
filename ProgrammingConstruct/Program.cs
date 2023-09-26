@@ -20,7 +20,7 @@ namespace ProgrammingConstruct
                     "3.Voter Eligibility Checker\n4.Find Largest number\n5.Check student eligible for admission or not." +
                     "\n6.Weekday name checker\n7.Arithmetic operator\n8.Print table" +
                     "\n9.Prints the sum of squares of N numbers\n10.Calculate Factorial\n" +
-                    "11.Flip Coin problem");
+                    "11.Flip Coin problem\n12.Word Reverse problem");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -131,6 +131,16 @@ namespace ProgrammingConstruct
                     case 11:
                         CoinFlipper game = new CoinFlipper();
                         game.Play();
+                        break;
+
+                    case 12:
+                        Console.Write("Enter a word: ");
+                        string userWord = Console.ReadLine();
+
+                        WordReverser wordReverser = new WordReverser();
+                        string reversed = wordReverser.ReverseWord(userWord);
+
+                        Console.WriteLine("Reversed word: " + reversed);
                         break;
 
                     default:

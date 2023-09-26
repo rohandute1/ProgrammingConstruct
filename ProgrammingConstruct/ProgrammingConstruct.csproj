@@ -56,6 +56,7 @@
     <Compile Include="SumOfSquaresCalculator.cs" />
     <Compile Include="VoterEligibilityChecker.cs" />
     <Compile Include="WeekdayCalculator.cs" />
+    <Compile Include="WordReverser.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

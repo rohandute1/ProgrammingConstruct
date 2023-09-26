@@ -18,7 +18,8 @@ namespace ProgrammingConstruct
                 Console.WriteLine("Please choose any one of the following program:");
                 Console.WriteLine("1.Check Two int are equal or not\n2.Check given number is even or odd.\n" +
                     "3.Voter Eligibility Checker\n4.Find Largest number\n5.Check student eligible for admission or not." +
-                    "\n6.Weekday name checker\n7.Arithmetic operator\n8.Print table");
+                    "\n6.Weekday name checker\n7.Arithmetic operator\n8.Print table" +
+                    "\n9.Prints the sum of squares of N numbers");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -100,6 +101,16 @@ namespace ProgrammingConstruct
                         int n = Convert.ToInt32(Console.ReadLine());
 
                         tablePrinter.PrintTable(n);
+                        break;
+                    case 9:
+                        SumOfSquaresCalculator square = new SumOfSquaresCalculator();
+
+                        Console.WriteLine("Enter a number N: ");
+                        int numb = Convert.ToInt32(Console.ReadLine());
+
+                        int sumOfSquares = square.CalculateSumOfSquares(numb);
+
+                        Console.WriteLine($"The sum of squares of the first {numb} numbers is: {sumOfSquares}");
                         break;
                     default:
                         Console.WriteLine("Invalid option, Please select a valid program.");

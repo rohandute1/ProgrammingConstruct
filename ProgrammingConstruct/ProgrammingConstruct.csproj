@@ -51,6 +51,7 @@
     <Compile Include="PowerOfTwoTable.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SumOfSquaresCalculator.cs" />
     <Compile Include="VoterEligibilityChecker.cs" />
     <Compile Include="WeekdayCalculator.cs" />
   </ItemGroup>

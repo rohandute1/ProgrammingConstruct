@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IntegerCompare.cs" />
+    <Compile Include="LargestOf3Number.cs" />
     <Compile Include="NumberChecker.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
